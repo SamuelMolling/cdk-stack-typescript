@@ -10,12 +10,6 @@ on:
      - main
 
 jobs:
-  test: 
-    environment: dev
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
   deploy:
     uses: SamuelMolling/workflows/.github/workflows/cdk-deploy.yaml@main
     secrets:
