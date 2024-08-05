@@ -12,3 +12,6 @@ on:
 jobs:
   deploy:
     uses: SamuelMolling/workflows/.github/workflows/cdk-deploy.yaml@main
+    secrets:
+      AWS_GITHUB_ACTIONS_ROLE: ${{ secrets.AWS_GITHUB_ACTIONS_ROLE }}
+      AWS_TARGET_REGION: ${{ secrets.AWS_TARGET_REGION }}
