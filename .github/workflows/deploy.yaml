@@ -10,6 +10,10 @@ on:
      - main
 
 jobs:
+
+  test: 
+    environment: dev
+    runs-on: ubuntu-latest
   deploy:
     uses: SamuelMolling/workflows/.github/workflows/cdk-deploy.yaml@main
     secrets:
