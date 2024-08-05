@@ -10,8 +10,5 @@ on:
      - main
 
 jobs:
- deploy:
-   runs-on: ubuntu-latest
-   steps:
-     - name: Deploy using reusable pipeline
-       uses: SamuelMolling/workflows/.github/workflows/cdk-deploy.yaml@main
+  deploy:
+    uses: SamuelMolling/workflows/.github/workflows/cdk-deploy.yaml@main
